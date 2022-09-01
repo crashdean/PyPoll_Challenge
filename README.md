@@ -7,7 +7,7 @@ the winner from that county along will the total votes counted.   The election d
 collected from 3 counties in Colorado.  The data contained three columns of voter ID, County, 
 and Canidate.
 
-## Election Audit Results.
+## Election Audit Results
 
 - Total Votes in the Congressional Election was 369,711
 - Number of votes per county was as folows.
@@ -20,3 +20,9 @@ and Canidate.
  2. **Charles Casper Stockham** : Had the second amount of votes with 23.0% and 85,213 votes.
  3. **Raymon Doane** : Was third with 3.1% and 11,606 votes.
 -  **Diana DeGette** with the election winner with 272,892 votes which was 73.8%.
+
+## Election Audit Summary  
+
+The script for this election is an example of the poweer of Python.   The funtion of the audit 
+can be used to analize any election data set with just a few changes to the variables.   Since the
+data was in CSV formate, any voting data in this same formate can be used.   
