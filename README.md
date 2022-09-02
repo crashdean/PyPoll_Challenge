@@ -26,4 +26,6 @@ and Canidate.
 
 The script for this election is an example of the poweer of Python.   The funtion of the audit 
 can be used to analize any election data set with just a few changes to the variables.   Since the
-data was in CSV format, any voting data in this same formate can be used.   
+data was in CSV format, any voting data in this same formate can be used.   For example, if the 
+file_to_load path in the os.path.join is change to point to a differnt CSV file, it would run
+the same.   
