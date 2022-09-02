@@ -20,7 +20,7 @@ and Canidate.
  2. **Charles Casper Stockham** : Had the second amount of votes with 23.0% and 85,213 votes.
  3. **Raymon Doane** : Was third with 3.1% and 11,606 votes.
 -  **Diana DeGette** with the election winner with 272,892 votes which was 73.8%.
--  [Link to election results](analysis)
+-  [Link to election results](analysis/election_analysis.txt)
 
 ## Election Audit Summary  
 
