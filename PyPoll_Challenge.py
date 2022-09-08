@@ -28,7 +28,7 @@ winning_count = 0
 winning_percentage = 0
 
 # 2: Track the largest county and county voter turnout.
-largest_turnout = ""
+Largest_turnout = ""
 largest_turnout_count = 0
 largest_percentage = 0
 
@@ -110,24 +110,24 @@ with open(file_to_save, "w") as txt_file:
         txt_file.write(county_results)
 
          # 6f: Write an if statement to determine the winning county and get its vote count.
-        if (county_vote > largest_turnout_count) and (
-            county_vote_percentage > largest_percentage
-        ):
+        if (county_vote > largest_turnout_count):
             largest_turnout_count = county_vote
-            largest_percentage = county_vote_percentage
+            #largest_percentage = county_vote_percentage
             Largest_turnout = county
+            #print("---water",county, Largest_turnout)       
 
     # 7: Print the county with the largest turnout to the terminal.
     winning_county_print = (
             f"-------------------------\n"
-            f"Largest County Turnout: {largest_turnout}\n"
+            f"Largest County Turnout: {Largest_turnout}\n"
             f"-------------------------\n"    
         )
     print(winning_county_print)
    
     # 8: Save the county with the largest turnout to a text file.
 
-    #txt_file.write(election_analysisl)
+    #print(winning_county_print)
+    txt_file.write(winning_county_print)
 
     # Save the final candidate vote count to the text file.
     for candidate_name in candidate_votes:
@@ -150,13 +150,13 @@ with open(file_to_save, "w") as txt_file:
             winning_percentage = vote_percentage
 
     # Print the winning candidate (to terminal)
-    winning_candidate_summary = (
+    winning_summary = (
         f"-------------------------\n"
         f"Winner: {winning_candidate}\n"
         f"Winning Vote Count: {winning_count:,}\n"
         f"Winning Percentage: {winning_percentage:.1f}%\n"
         f"-------------------------\n")
-    print(winning_candidate_summary)
+    print(winning_summary)
 
     # Save the winning candidate's name to the text file
-    txt_file.write(winning_candidate_summary)
+    txt_file.write(winning_summary)
